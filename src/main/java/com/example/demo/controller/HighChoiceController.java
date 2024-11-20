@@ -29,7 +29,7 @@ public class HighChoiceController {
         Map<String, Object> highSellerMap = highChoiceService.highSeller(paramMap);
         paramMap.put("highSellerMap", highSellerMap);
 
-        return highChoiceService.highSeller(paramMap);
+        return highChoiceService.highSellPlayer(paramMap);
     }
 
 }

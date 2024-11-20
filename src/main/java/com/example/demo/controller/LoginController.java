@@ -23,6 +23,7 @@ public class LoginController {
         return mav;
     }
 
+    //로그인 처리
     @PostMapping("/api/loginPro")
     public Map<String, Object> loginPro(@RequestBody Map<String, Object> paramMap) throws Exception {
         System.out.println(paramMap);

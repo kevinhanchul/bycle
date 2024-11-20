@@ -36,7 +36,7 @@ public class LoginService {
             paramMap.put("chkStop",chkStop);
             return paramMap;
         }
-        //자가제한했는지 확인
+        //로그인 자가제한했는지 확인
         String limitLogin = login.chkLoginLimit(paramMap);
         if(limitLogin.equals("Y")){
             paramMap.put("loginLimit",limitLogin);
